@@ -1,0 +1,185 @@
+
+:root{
+    --red: #cd4631;
+}
+
+
+
+.hero11{
+    padding-top: 50px;
+    width: 100%;
+    
+    box-shadow: 0 5px 6px -6px;
+    padding-bottom: 60px;
+    display: flex;
+    
+    flex-wrap: wrap;
+ 
+
+  
+  color:black;
+
+}
+
+
+ 
+.recipeSection1{
+    display: flex;
+    flex-direction: row-reverse;
+    background: rgba(87, 86, 86, 0.082);
+width: 80vw;
+;
+margin: auto;
+margin-top: 40px;
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+.ingredients1{
+    font-size: 17px;
+    width: 480px;
+    padding-left: 40px;
+    box-shadow: inset 2px 0 0 0 rgba(53, 52, 52, 0.432);
+    height: fit-content;
+    color:black;
+    margin-top: 50px;
+    margin: auto;
+  
+}
+
+.nameAndPhoto{
+    display: flex;
+    flex-direction:column;
+    margin: auto;
+    align-items: center;
+    
+
+   
+}
+.recipeName{
+    text-align: center;
+    margin-top: 5%;
+    width: fit-content;
+    color:  rgba(236, 3, 3, 0.897);
+  
+
+}
+
+.ingredientsContainer{
+    margin-top: 50px;
+    display: flex;
+   
+    width: 300px;
+    
+    box-shadow: 0 5px 6px -6px rgba(236, 3, 3, 0.5);
+    
+}
+
+.items{
+    margin-right: 50px;
+   
+    
+    
+   
+    padding-bottom: 10px;
+    
+    
+}
+
+.item{
+   
+   
+    margin-top: 7px;
+    font-weight: 700;
+}
+
+.measures{
+    padding-bottom: 10px;
+}
+
+.measure{
+    margin-top: 7px;
+    
+}
+
+
+.extraInfo{
+    margin-top: 15vh;
+    width: fit-content;
+}
+
+.category{
+    margin-bottom: 15px;
+    box-shadow: 0 5px 6px -6px rgba(236, 3, 3, 0.5);
+}
+
+.ytVideo{
+    height: 30vw;
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.instructions{
+   
+    margin-top: 50px;
+    width: 80vw;
+    margin: auto;
+    letter-spacing: 1px;
+    font-size: 18px;
+    
+}
+
+.instructions h2{
+    color: rgba(236, 3, 3, 0.897);
+}
+
+.ytTutorial{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.productImg1{
+    display: flex;
+    align-self: center;
+ 
+
+    width: 100%;
+    height: 100%;
+   
+    object-fit:cover; 
+    box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.4);
+   
+}
+
+
+
+.loo{
+    width: 31vw;
+    height:60vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    margin: auto;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(60%)
+
+  }
+
+
+
+
+
+span{
+    color:  rgb(236, 3, 3);
+    font-weight: 600;
+}
+/*letters animation*/
+

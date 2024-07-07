@@ -1,0 +1,5 @@
+public/_next-video
+node_modules
+.next
+.env
+.env*
