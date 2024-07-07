@@ -1,0 +1,49 @@
+
+:root{
+    --red: #cd4631;
+}
+
+.navigation{
+   border-bottom: solid white 1px;
+    color: #ecd3cf;
+    background: transparent;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+   position:absolute;
+   text-size-adjust: 100%;
+   width: 100%;
+   
+   
+    top: 0;
+   z-index: 1;
+}
+
+
+.homeButton {
+
+ text-decoration: none;
+ display: flex;
+ align-items: center;
+ color:rgb(236, 3, 3) ;
+ font-size: 22px;
+ margin-right: 5px;
+padding-left: 20px;
+background: transparent;
+}
+
+.navigation1{
+    border-bottom: solid rgb(236, 3, 3)  1px;
+    color: #571910;
+    background: transparent;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+   position:absolute;
+   text-size-adjust: 100%;
+   width: 100%;
+   
+   
+    top: 0;
+   z-index: 1;
+}

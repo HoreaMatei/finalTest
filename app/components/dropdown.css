@@ -1,0 +1,60 @@
+:root{
+    --red: #cd4631;
+}
+
+
+.menu{
+    
+    position: relative;
+    margin-right: 20px;
+    
+   
+    
+}
+
+
+.dropdown{
+    position: absolute;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    
+    
+    
+}
+
+.dropdownButton{
+    height: 100%;
+   color:rgb(236, 3, 3) ;
+    font-size: 22px;
+    cursor: pointer;
+    background: transparent;
+    border-style: none;
+    
+}
+
+li{
+    
+    width: 100%;
+    font-size: 20px;
+    height: 35px;
+    box-shadow: 0 0px 3px 0 var(--red);
+   text-decoration: none;
+    list-style-type: none ;
+    margin: 0;
+    padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+}
+
+.link{
+ width: 100px;
+ 
+ color: var(--red)
+
+}

@@ -1,0 +1,441 @@
+
+
+
+:root{
+  --red: #cd4631;
+  --back: rgba(87, 86, 86, 0.082);
+}
+
+
+html, body{
+    padding: 0;
+  margin: 0;
+  
+  display: block;
+  
+  min-height: 100%;
+  
+  
+  }
+  html{
+    height: 100%;
+  }
+  
+  body{
+    
+    
+    background: rgba(87, 86, 86, 0.082);
+    
+      -webkit-backdrop-filter: blur(10px);
+    
+              backdrop-filter: blur(10px);
+     z-index: 1;
+      /* Full height */
+      min-height: 100%;
+      
+      
+      /* Center and scale the image nicely */
+      
+  
+      background-position: center;
+  }
+  
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to{transform: translateX(-100%);}
+  }
+  
+  .logos{
+    overflow: hidden;
+    
+    background: white;
+    white-space: nowrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+     
+  }
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .logos:hover .logosSlide{
+    animation-play-state: paused;
+  }
+  
+  .logosSlide{
+  
+    display: grid;
+    grid-template-columns:  repeat(5, 1fr);
+    animation: 150s slide infinite linear;
+  
+  }
+  
+  .slide{height: 245px;
+   
+    margin: 0 5px;
+  }
+  
+  .slideImg{
+    width: 480px;
+    height: 200px;
+  }
+
+  .coverImg{
+    margin-top: -100px;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    margin-bottom: 100px;
+    
+   
+  
+    -webkit-backdrop-filter: blur(100px);
+    
+   
+  
+            backdrop-filter: blur(100px);
+  
+     /* Full height */
+     min-height: 100%;
+     background-size: 100% 100%;
+     
+     background-image: url('./foodb.jpg');
+     /* Center and scale the image nicely */
+    
+     flex-direction: column;
+     align-items:center;
+     
+     box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.3);
+     justify-content: center;
+  
+  }
+
+  
+  
+  .coverImg h1{
+  font-size: 80px;
+  margin-bottom: 100px;
+  width: 80%;
+  
+   text-align: left;
+  color: white;
+  
+  }
+  .coverImg h2{
+    font-size: 65px;
+    width: 60%;
+    margin-top: 200px;
+
+    text-align: right;
+    color: white;
+  }
+  
+  .arrow{
+  display: flex;
+    margin-bottom: -10px;
+    margin-top: 200px;
+  
+  border: none;
+  background-color: transparent;
+  justify-content: flex-end;
+  align-items: flex-end;
+  
+  }
+  
+  .arrow:focus{
+  outline: 0;}
+  
+  
+  
+  :root{
+    --red: #cd4631;
+   
+  }
+  
+  
+  
+  
+  #product{
+    display: flex;
+    align-items: center;
+    text-align: center;
+   
+    -webkit-backdrop-filter: blur(100px);
+   
+            backdrop-filter: blur(100px);
+
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   clip-path: circle(50%);
+  
+  
+   
+  
+   
+  
+   
+  }
+  
+  .leftOfImg{
+    margin-top: 2px;
+    
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.2);
+  
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+  
+    position: absolute;
+   
+    color: white;
+    
+  
+   
+   
+    
+  
+  }
+  
+  .leftOfImg:hover{
+    box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.4);
+  }
+  
+  .leftOfImg:hover .ingredients{
+    
+   display: block;
+  
+  }
+  
+  .ingredients{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    
+  
+  
+  
+  }
+  
+  .ingredients p{
+    font-size: 40px;
+   
+  }
+  
+  .mainLi{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    border: none;
+    box-shadow: none;
+    font-size: 20px;
+    
+  
+  }
+  
+  
+  .mealName{
+    padding-top:20px ;
+     text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+   
+   color: rgb(53, 53, 53);
+  
+    width: 100%;
+  }
+  
+  
+  .hero{
+    
+    text-align: center;
+    width: 80vw;
+    margin: auto;
+    height: 100%;
+    color: white;
+    font-weight: bold;
+   
+   
+  
+   
+   
+  
+    padding: 20px;
+    
+  
+  
+    
+  }
+  
+  .productContainer{
+    margin-top: 60px;
+    gap: 50px;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   text-decoration: none;
+  }
+  .linkk{
+    text-decoration: none;
+    font-weight: 100;
+  }
+  .productImg{
+    
+   
+  margin-bottom:-3px;
+  }
+  
+  
+  
+  
+  
+  input{
+   width:  35vw;
+   height: 50px;
+   border: none;
+   
+ 
+  
+                
+              
+  
+   color: #888787;
+   font-size: 17px;
+    border-radius: 5px;
+    background: transparent;
+
+   
+   vertical-align: middle;
+
+  }
+
+
+
+  
+
+
+
+
+
+  
+  
+  .searchBt{
+    border: none;
+    height: 50px;
+    
+    background: rgba(165, 165, 165, 0.534);
+
+    margin-right: -14px;
+    cursor: pointer;
+    color: white;
+    vertical-align: middle; 
+    border-radius: 0 5px 5px 0;
+  
+    
+  
+  }
+
+  .searchBt:hover{
+    background: #919090;
+    
+  }
+  
+
+  .searchBt:active{
+    background: #a3a3a3;
+    transform: scale(0.95); 
+    box-shadow: 0 4px 5px -3px rgb(180, 179, 179);
+
+
+
+
+    
+  }
+
+  .searchBt:focus{
+    outline: none;
+  }
+
+  
+  
+  .search{
+    border: 2px solid rgba(0, 0, 0, 0.205);
+    height: 50px;
+    border-radius: 10px;
+    background: var(--back);
+    width: 38vw;
+    padding-left: 0;
+    margin: auto;
+  
+    
+  }
+  
+  input:hover, input:focus {
+  
+        
+        outline: 0;
+       
+        
+        
+     
+
+    
+  }
+
+  input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    /*Your new styles */
+    height: 20px;
+    width: 20px;
+    background: transparent;
+
+  }
+
+ 
+  .hero h1{
+    color: #e9c913;
+  }
+  
+  .finalSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .finalSection p{
+    font-size: 50px;
+  }
+  .rec{width: 450px;}
+  
+  .recommandations{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: auto;
+    margin-bottom: 100px;
+   
+  
+  }
+
+
+
+
+
+
