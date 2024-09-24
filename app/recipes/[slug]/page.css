@@ -1,185 +1,570 @@
-
-:root{
-    --red: #cd4631;
+:root {
+  --red: #cd4631;
+  --primary: rgb(93, 134, 138);
 }
 
+.hero11 {
+  padding-top: 70px;
+  width: 100%;
+  height: 89vh;
 
+  box-shadow: 0 5px 6px -6px;
+  padding-bottom: 60px;
+  display: flex;
 
-.hero11{
-    padding-top: 50px;
-    width: 100%;
-    
-    box-shadow: 0 5px 6px -6px;
-    padding-bottom: 60px;
-    display: flex;
-    
-    flex-wrap: wrap;
- 
+  background-color: rgb(92, 134, 150);
 
-  
-  color:black;
+  flex-wrap: wrap;
+  backdrop-filter: blur(12px);
+  filter: brightness(120%);
+  display: grid;
+}
+.smoothArrow {
+  display: flex;
 
+  margin: auto;
+  margin-top: 40px;
+  border: none;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-
- 
-.recipeSection1{
-    display: flex;
-    flex-direction: row-reverse;
-    background: rgba(87, 86, 86, 0.082);
-width: 80vw;
-;
-margin: auto;
-margin-top: 40px;
-border-radius: 10px;
-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.smoothArrow:focus {
+  outline: 0;
 }
 
+.smoothArrow:active {
+  transform: scale(0.9);
+}
+.videoBg2 {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 
-
-.ingredients1{
-    font-size: 17px;
-    width: 480px;
-    padding-left: 40px;
-    box-shadow: inset 2px 0 0 0 rgba(53, 52, 52, 0.432);
-    height: fit-content;
-    color:black;
-    margin-top: 50px;
-    margin: auto;
-  
+  height: 100vh;
 }
 
-.nameAndPhoto{
-    display: flex;
-    flex-direction:column;
-    margin: auto;
-    align-items: center;
-    
-
-   
-}
-.recipeName{
-    text-align: center;
-    margin-top: 5%;
-    width: fit-content;
-    color:  rgba(236, 3, 3, 0.897);
-  
-
+.recipeSection1 {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 72vw;
+  margin: auto;
+  margin-top: 40px;
 }
 
-.ingredientsContainer{
-    margin-top: 50px;
-    display: flex;
-   
-    width: 300px;
-    
-    box-shadow: 0 5px 6px -6px rgba(236, 3, 3, 0.5);
-    
+.ingg {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.items{
-    margin-right: 50px;
-   
-    
-    
-   
-    padding-bottom: 10px;
-    
-    
+.rightOfImg {
+  transition: transform 0.8s;
+  width: 100%;
+  height: 100%;
 }
 
-.item{
-   
-   
-    margin-top: 7px;
-    font-weight: 700;
+.recipeName {
+  text-align: center;
+  font-size: 40px;
+  margin: auto;
+
+  width: fit-content;
+
+  color: var(--primary);
+}
+.ingredientsContainer {
+  margin-top: 10px;
+  width: 36vw;
+  height: 100%;
+  display: flex;
+  transition: transform 0.8s;
+
+  width: fit-content;
+  box-shadow: 0 5px 6px -6px rgba(43, 43, 43, 0.5);
+  font-size: 19px;
 }
 
-.measures{
-    padding-bottom: 10px;
+.ingredientsH2 {
+  color: rgb(124, 124, 124);
+  font-size: 20px;
+  margin-top: 40px;
 }
 
-.measure{
-    margin-top: 7px;
-    
+.items {
+  margin-right: 50px;
+  color: rgb(41, 41, 41);
+  padding-bottom: 10px;
 }
 
-
-.extraInfo{
-    margin-top: 15vh;
-    width: fit-content;
+.item {
+  margin-top: 7px;
+  font-weight: 700;
 }
 
-.category{
-    margin-bottom: 15px;
-    box-shadow: 0 5px 6px -6px rgba(236, 3, 3, 0.5);
+.measures {
+  padding-bottom: 10px;
+  color: rgba(78, 78, 78, 0.829);
 }
 
-.ytVideo{
-    height: 30vw;
-    width: 60vw;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 30px;
+.measure {
+  margin-top: 7px;
 }
 
-.instructions{
-   
-    margin-top: 50px;
-    width: 80vw;
-    margin: auto;
-    letter-spacing: 1px;
-    font-size: 18px;
-    
+.extraInfo {
+  margin-top: 40px;
+  width: fit-content;
 }
 
-.instructions h2{
-    color: rgba(236, 3, 3, 0.897);
+.category {
+  margin-bottom: 15px;
+  box-shadow: 0 5px 6px -6px var(--primary);
 }
 
-.ytTutorial{
-    margin-top: 100px;
-    text-align: center;
+.instructions h2 {
+  color: var(--primary);
 }
 
-.productImg1{
-    display: flex;
-    align-self: center;
- 
-
-    width: 100%;
-    height: 100%;
-   
-    object-fit:cover; 
-    box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.4);
-   
-}
-
-
-
-.loo{
-    width: 31vw;
-    height:60vh;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
-    margin: auto;
-    margin-bottom: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    filter: brightness(60%)
-
-  }
-
-
-
-
-
-span{
-    color:  rgb(236, 3, 3);
-    font-weight: 600;
+span {
+  color: var(--primary);
+  font-weight: 600;
 }
 /*letters animation*/
 
+.card {
+  transition: transform 0.8s;
+  width: 100%;
+  margin: auto;
+  margin: auto;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.card .front,
+.card .back {
+  box-shadow: 0 0 10px black;
+  clip-path: inset(0px -10px -10px 0px);
+}
+
+.card .front {
+  width: 36vw;
+  margin: auto;
+  background: rgb(219, 225, 226);
+
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+  position: absolute;
+  margin-left: 40px;
+  height: 80vh;
+  margin-top: 0;
+}
+
+.flipped .front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+  width: 36vw;
+  margin: 0;
+  border-radius: 0px;
+  height: 80vh;
+}
+
+.card .back {
+  background: rgb(219, 225, 226);
+  width: 36vw;
+  position: absolute;
+
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+
+  height: 80vh;
+}
+
+.flipped .back {
+  transform: rotateY(90deg);
+  height: 80vh;
+  transition-delay: 0s;
+}
+
+.flipBtn,
+.flipBtn2 {
+  border: none;
+  background: transparent;
+  outline: none;
+  position: absolute;
+  bottom: 0;
+
+  cursor: pointer;
+}
+.flipBtn {
+  right: 0;
+}
+
+.flipBtn2 {
+  left: 0;
+}
+
+.flippedArrow {
+  height: 50px;
+  width: 40px;
+  transform: rotateY(180deg);
+  border: none;
+}
+
+.instructionsH1 {
+  margin: auto;
+  width: fit-content;
+  margin-top: 70px;
+  color: rgb(93, 134, 138);
+  font-size: 30px;
+}
+
+.intructionsText {
+  margin-top: 10px;
+  font-size: 20px;
+  font-size: clamp(1rem, 18px, 3rem);
+  word-spacing: 1px;
+  line-height: 1.6;
+  padding: 40px;
+
+  height: 67%;
+
+  text-wrap: balance;
+}
+
+.imgInHere {
+  position: absolute;
+  width: 87%;
+  height: 89%;
+  position: relative;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+
+  border: solid 1.5em rgba(0, 0, 0, 0.034);
+  background: url(https://images.unsplash.com/photo-1544070078-a212eda27b49?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ)
+    50% / cover border-box padding-box;
+  /* background-origin */
+  /* background-clip */
+  font-size: 2em;
+}
+
+.imgInHere::before {
+  position: absolute;
+  z-index: -1;
+  /* put it *behind* parent */
+  /* go outside padding-box by * a border-width ($b) in every direction */
+  top: -1.5em;
+  right: -1.7em;
+  bottom: -1.6em;
+  left: -1.5em;
+  border: inherit;
+  border-color: transparent;
+  background: inherit;
+  background-clip: border-box;
+  /* -webkit-prefixed version * still needed for * some mobile browsers 💔😭 */
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+  content: "";
+}
+
+.loo {
+  width: 36vw;
+  height: 80vh;
+  overflow: hidden;
+
+  margin: auto;
+
+  filter: brightness(60%);
+
+  box-shadow: 0 0 10px black;
+  clip-path: inset(0px 0px -10px -10px);
+}
+
+.productImg1 {
+  margin: auto;
+  position: absolute;
+  display: flex;
+  align-self: center;
+  top: 0;
+  left: 0;
+
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  object-fit: cover;
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 50px 50px white inset;
+}
+
+.none,
+.flipped {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  justify-content: space-between;
+  height: 80vh;
+}
+
+.dotted {
+  height: 93%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dotted,
+.intructionsText {
+  background-image: repeating-linear-gradient(
+      90deg,
+      #5a5a5a70,
+      #5a5a5a70 15px,
+      transparent 15px,
+      transparent 21px
+    ),
+    repeating-linear-gradient(
+      180deg,
+      #5a5a5a70,
+      #5a5a5a70 15px,
+      transparent 15px,
+      transparent 21px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      #5a5a5a70,
+      #5a5a5a70 15px,
+      transparent 15px,
+      transparent 21px
+    ),
+    repeating-linear-gradient(
+      180deg,
+      #5a5a5a70,
+      #5a5a5a70 15px,
+      transparent 15px,
+      transparent 21px
+    );
+  background-position: left top, right top, left bottom, left top;
+  background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
+  background-size: 100% 0, 0 100%, 100% 1px, 0 100%;
+}
+
+#ytSection {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(235, 244, 245);
+}
+
+.ytTutorial {
+  text-align: center;
+  margin-bottom: 100px;
+  color: var(--primary);
+  font-size: 50px;
+}
+
+.ytVideo {
+  width: 59vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  aspect-ratio: 16/9;
+
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px black;
+  clip-path: inset(0px -10px -10px -10px);
+}
+
+@media (max-width: 1300px) {
+  .recipeSection1 {
+    flex-direction: column-reverse;
+  }
+
+  .hero11 {
+    height: fit-content;
+  }
+
+  .loo {
+    width: 55vw;
+    box-shadow: none;
+  }
+
+  .card .back {
+    margin: auto;
+    width: 55vw;
+    box-shadow: 0;
+  }
+
+  .card .front {
+    width: 55vw;
+    margin: auto;
+  }
+  .none,
+  .flipped {
+    display: flex;
+
+    align-items: center;
+  }
+
+  .ingredientsContainer {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .imgInHere {
+    width: 90vw;
+    margin-left: 0;
+  }
+
+  .imgInHere::before {
+    top: -1.5em;
+    right: -1.7em;
+    bottom: -1.2em;
+    left: -1.5em;
+  }
+  .hero11 {
+    overflow: hidden;
+  }
+
+  .recipeSection1 {
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+  }
+  .loo {
+    width: 90vw;
+  }
+  .card .back {
+    width: 90vw;
+  }
+
+  .card .front {
+    width: 90vw;
+  }
+  .nameAndPhoto {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .recipeName {
+    font-size: 35px;
+  }
+
+  .card .back {
+    height: fit-content;
+  }
+  .card .front {
+    height: fit-content;
+  }
+
+  .ytTutorial {
+    font-size: 30px;
+    width: 90%;
+    height: fit-content;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .ytVideo {
+    width: 95vw;
+  }
+
+  .flipBtn {
+    justify-content: flex-end;
+  }
+
+  .flipBtn2 {
+    justify-content: flex-start;
+  }
+  .flipBtn,
+  .flipBtn2 {
+    display: flex;
+    width: 100%;
+    position: relative;
+  }
+
+  .items,
+  .measures {
+    font-size: 16px;
+  }
+  .imgInHere {
+    background-position: center;
+  }
+  .dotted,
+  .intructionsText {
+    background-image: none;
+  }
+
+  .intructionsText {
+    margin-top: 0;
+    font-size: 2.1vh;
+  }
+}
+
+@media (max-width: 450px) {
+  .recipeSection1 {
+    height: fit-content;
+  }
+
+  .ingg {
+    height: fit-content;
+  }
+  .ingredientsH2 {
+    margin-top: 5px;
+    margin-bottom: 4px;
+    font-size: 16px;
+  }
+  .recipeName {
+    font-size: 5vh;
+    margin-top: 10px;
+  }
+
+  .extraInfo {
+    margin-top: 4px;
+    font-size: 14px;
+  }
+
+  .item,
+  .measure {
+    margin-top: 2px;
+    font-size: 12px;
+  }
+
+  .category {
+    margin-bottom: 2px;
+  }
+
+  .arrowPop,
+  .flippedArrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .instructionsH1 {
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  .intructionsText {
+    margin-top: -30px;
+  }
+}

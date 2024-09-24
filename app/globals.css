@@ -1,441 +1,396 @@
-
-
-
-:root{
+:root {
   --red: #cd4631;
   --back: rgba(87, 86, 86, 0.082);
 }
 
-
-html, body{
-    padding: 0;
+html,
+body {
+  padding: 0;
   margin: 0;
-  
+
   display: block;
-  
+
   min-height: 100%;
-  
-  
-  }
-  html{
-    height: 100%;
-  }
-  
-  body{
-    
-    
-    background: rgba(87, 86, 86, 0.082);
-    
-      -webkit-backdrop-filter: blur(10px);
-    
-              backdrop-filter: blur(10px);
-     z-index: 1;
-      /* Full height */
-      min-height: 100%;
-      
-      
-      /* Center and scale the image nicely */
-      
-  
-      background-position: center;
-  }
-  
-  @keyframes slide {
-    from {
-      transform: translateX(0);
-    }
-    to{transform: translateX(-100%);}
-  }
-  
-  .logos{
-    overflow: hidden;
-    
-    background: white;
-    white-space: nowrap;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: relative;
-     
-  }
+}
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  .logos:hover .logosSlide{
-    animation-play-state: paused;
-  }
-  
-  .logosSlide{
-  
-    display: grid;
-    grid-template-columns:  repeat(5, 1fr);
-    animation: 150s slide infinite linear;
-  
-  }
-  
-  .slide{height: 245px;
-   
-    margin: 0 5px;
-  }
-  
-  .slideImg{
-    width: 480px;
-    height: 200px;
-  }
+body {
+  background: transparent;
 
-  .coverImg{
-    margin-top: -100px;
-    display: flex;
-    width: 100%;
-    margin: auto;
-    height: 100vh;
-    margin-bottom: 100px;
-    
-   
-  
-    -webkit-backdrop-filter: blur(100px);
-    
-   
-  
-            backdrop-filter: blur(100px);
-  
-     /* Full height */
-     min-height: 100%;
-     background-size: 100% 100%;
-     
-     background-image: url('./foodb.jpg');
-     /* Center and scale the image nicely */
-    
-     flex-direction: column;
-     align-items:center;
-     
-     box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.3);
-     justify-content: center;
-  
-  }
+  z-index: 1;
+  /* Full height */
 
-  
-  
-  .coverImg h1{
+  /* Center and scale the image nicely */
+
+  background-position: center;
+}
+
+.videoBg {
+  object-fit: cover;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  filter: brightness(80%);
+  height: 100vh;
+}
+
+.coverImg {
+  display: flex;
+  min-width: 100%;
+  margin: auto;
+  height: 100vh;
+  margin-bottom: 100px;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.3);
+  justify-content: center;
+}
+
+.coverImg h1 {
   font-size: 80px;
+  font-size: clamp(2rem, 6vw, 6rem);
   margin-bottom: 100px;
   width: 80%;
-  
-   text-align: left;
-  color: white;
-  
-  }
-  .coverImg h2{
-    font-size: 65px;
-    width: 60%;
-    margin-top: 200px;
 
-    text-align: right;
-    color: white;
-  }
-  
-  .arrow{
+  text-align: left;
+  color: white;
+}
+.coverImg h2 {
+  font-size: clamp(2rem, 6vw, 4.1rem);
+  width: 60%;
+  margin-top: 200px;
+
+  text-align: right;
+  color: white;
+}
+
+.arrow {
   display: flex;
-    margin-bottom: -10px;
-    margin-top: 200px;
-  
+  margin-bottom: -10px;
+  margin-top: 200px;
+
   border: none;
   background-color: transparent;
   justify-content: flex-end;
   align-items: flex-end;
-  
-  }
-  
-  .arrow:focus{
-  outline: 0;}
-  
-  
-  
-  :root{
-    --red: #cd4631;
-   
-  }
-  
-  
-  
-  
-  #product{
-    display: flex;
-    align-items: center;
-    text-align: center;
-   
-    -webkit-backdrop-filter: blur(100px);
-   
-            backdrop-filter: blur(100px);
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+}
 
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: column;
-   clip-path: circle(50%);
-  
-  
-   
-  
-   
-  
-   
+.arrow:focus {
+  outline: 0;
+}
+
+.arrow:active {
+  transform: scale(0.9);
+}
+
+:root {
+  --red: #cd4631;
+}
+
+.linkk {
+  width: 200px;
+}
+#product {
+  display: flex;
+  align-items: center;
+
+  text-align: center;
+
+  -webkit-backdrop-filter: blur(100px);
+
+  backdrop-filter: blur(100px);
+  height: 36vh;
+  flex-wrap: wrap;
+  flex-direction: column;
+  clip-path: circle(49%);
+
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#product:active {
+  transform: scale(0.96);
+}
+.leftOfImg {
+  margin-top: 2px;
+
+  width: 100%;
+  height: 400px;
+  font-size: 10px;
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+
+  color: white;
+}
+
+.leftOfImg:hover {
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.4);
+}
+
+.leftOfImg:hover .ingredients {
+  display: block;
+}
+
+.ingredients {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.ingredients p {
+  font-size: 40px;
+}
+
+.mainLi {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  border: none;
+  box-shadow: none;
+  font-size: 20px;
+}
+
+.mealName {
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+
+  color: rgb(53, 53, 53);
+  margin-top: 4vh;
+  width: 100%;
+}
+
+.productContainer {
+  margin-top: 100px;
+  min-height: 100%;
+  gap: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+.linkk {
+  text-decoration: none;
+  font-weight: 100;
+  height: fit-content;
+}
+.productImg {
+  margin-bottom: -3px;
+}
+
+.hero h1 {
+  color: #e9c913;
+}
+
+.finalSection {
+  padding-top: 30px;
+  width: 80vw;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.rec {
+  width: 400px;
+  margin: auto;
+}
+
+.recommandations {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: auto;
+  position: relative;
+  margin-top: 50px;
+}
+
+input {
+  height: 50px;
+  border: none;
+  width: 90%;
+  color: #888787;
+  font-size: 15px;
+  margin-top: 5px;
+  background: transparent;
+  vertical-align: middle;
+  margin-left: 12px;
+}
+
+.searchBt {
+  border: none;
+  height: 60px;
+  width: 50px;
+
+  background: transparent;
+
+  cursor: pointer;
+  color: white;
+  vertical-align: middle;
+  border-radius: 0 30px 30px 0;
+}
+
+.searchBt:hover {
+  background: #a1a0a077;
+}
+
+.searchBt:active {
+  background: #a3a3a3;
+  transform: scale(0.95);
+  box-shadow: 0 4px 5px -3px rgb(180, 179, 179);
+}
+
+.searchBt:focus {
+  outline: none;
+}
+
+.search {
+  height: 60px;
+  border-radius: 30px;
+  background: rgba(206, 199, 199, 0.425);
+  width: clamp(300px, 40vw, 700px);
+  padding-left: 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input:hover,
+input:focus {
+  outline: 0;
+}
+
+input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  /*Your new styles */
+  height: 20px;
+  width: 20px;
+  background: transparent;
+}
+
+.hero {
+  text-align: center;
+  width: 80vw;
+  margin: auto;
+  min-height: 100%;
+  color: white;
+  font-weight: bold;
+
+  padding: 20px;
+}
+.h11 {
+  position: absolute;
+  top: 10vh;
+}
+
+.h22 {
+  position: absolute;
+  top: 40vh;
+}
+
+.recommended_recipes {
+  font-size: 40px;
+}
+
+@media (max-height: 934px) {
+  .mealName {
+    margin-top: 5rem;
   }
-  
-  .leftOfImg{
-    margin-top: 2px;
-    
+}
+
+@media (max-width: 450px) {
+  .ingredients p {
+    font-size: 30px;
+    margin-bottom: 2px;
+  }
+
+  .mainLi {
+    font-size: 15px;
+  }
+
+  .coverImg {
     width: 100%;
-    height: 100%;
-    font-size: 10px;
-    box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.2);
-  
-    display: flex;
-   flex-direction: column;
-   justify-content: center;
-  
-    position: absolute;
-   
-    color: white;
-    
-  
-   
-   
-    
-  
   }
-  
-  .leftOfImg:hover{
-    box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.4);
+
+  .videoBg {
+    width: 100%;
   }
-  
-  .leftOfImg:hover .ingredients{
-    
-   display: block;
-  
+  .page {
+    width: 100vw;
   }
-  
-  .ingredients{
+
+  .recommended_recipes {
+    font-size: 30px;
+    width: 90%;
+    margin: auto;
+  }
+  .productContainer {
+    width: 100vw;
+  }
+  #product {
+    width: 90vw;
+  }
+
+  .mealName {
+    width: 50vw;
+  }
+
+  h1 {
+    width: 60%;
+    margin: 0;
+  }
+
+  .finalSection {
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  html {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+  }
+
+  .linkk,
+  .rec,
+  #product {
+    width: 300px;
+  }
+
+  .productContainer {
+    width: 70%;
+    margin: auto;
+  }
+
+  .search {
+    width: 300px;
+  }
+  .arrow {
     display: none;
-    
-  
-  
-  
-  }
-  
-  .ingredients p{
-    font-size: 40px;
-   
-  }
-  
-  .mainLi{
-    list-style: none;
-    width: 100%;
-    text-align: center;
-    border: none;
-    box-shadow: none;
-    font-size: 20px;
-    
-  
-  }
-  
-  
-  .mealName{
-    padding-top:20px ;
-     text-decoration: none;
-    font-size: 20px;
-    text-align: center;
-    margin: auto;
-   
-   color: rgb(53, 53, 53);
-  
-    width: 100%;
-  }
-  
-  
-  .hero{
-    
-    text-align: center;
-    width: 80vw;
-    margin: auto;
-    height: 100%;
-    color: white;
-    font-weight: bold;
-   
-   
-  
-   
-   
-  
-    padding: 20px;
-    
-  
-  
-    
-  }
-  
-  .productContainer{
-    margin-top: 60px;
-    gap: 50px;
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-   text-decoration: none;
-  }
-  .linkk{
-    text-decoration: none;
-    font-weight: 100;
-  }
-  .productImg{
-    
-   
-  margin-bottom:-3px;
-  }
-  
-  
-  
-  
-  
-  input{
-   width:  35vw;
-   height: 50px;
-   border: none;
-   
- 
-  
-                
-              
-  
-   color: #888787;
-   font-size: 17px;
-    border-radius: 5px;
-    background: transparent;
-
-   
-   vertical-align: middle;
-
   }
 
-
-
-  
-
-
-
-
-
-  
-  
-  .searchBt{
-    border: none;
-    height: 50px;
-    
-    background: rgba(165, 165, 165, 0.534);
-
-    margin-right: -14px;
-    cursor: pointer;
-    color: white;
-    vertical-align: middle; 
-    border-radius: 0 5px 5px 0;
-  
-    
-  
+  .page {
+    overflow: hidden;
   }
-
-  .searchBt:hover{
-    background: #919090;
-    
-  }
-  
-
-  .searchBt:active{
-    background: #a3a3a3;
-    transform: scale(0.95); 
-    box-shadow: 0 4px 5px -3px rgb(180, 179, 179);
-
-
-
-
-    
-  }
-
-  .searchBt:focus{
-    outline: none;
-  }
-
-  
-  
-  .search{
-    border: 2px solid rgba(0, 0, 0, 0.205);
-    height: 50px;
-    border-radius: 10px;
-    background: var(--back);
-    width: 38vw;
-    padding-left: 0;
-    margin: auto;
-  
-    
-  }
-  
-  input:hover, input:focus {
-  
-        
-        outline: 0;
-       
-        
-        
-     
-
-    
-  }
-
-  input::-webkit-search-cancel-button {
-    -webkit-appearance: none;
-    /*Your new styles */
-    height: 20px;
-    width: 20px;
-    background: transparent;
-
-  }
-
- 
-  .hero h1{
-    color: #e9c913;
-  }
-  
-  .finalSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  .finalSection p{
-    font-size: 50px;
-  }
-  .rec{width: 450px;}
-  
-  .recommandations{
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    gap: 50px;
-    margin: auto;
-    margin-bottom: 100px;
-   
-  
-  }
-
-
-
-
-
-
+}

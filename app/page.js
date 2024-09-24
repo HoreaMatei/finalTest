@@ -8,24 +8,7 @@ import Image from "next/image";
 import "./globals.css";
 import Link from "next/link";
 
-import homeVideo from "../public/video.mp4";
-import Video from "next-video";
 import Navbar from "./components/Navbar";
-import getStarted from "/videos/get-started.mp4";
-import video from "/videos/backVideo.mp4";
-import video1 from "../public/video.mp4";
-
-import food from "./food.jpg";
-import food1 from "./food1.jpg";
-import sushi from "./sushi.jpg";
-import lasagne from "./lasagne.jpg";
-import mac from "./mac.jpg";
-import cover from "./cover.jpg";
-import arrow from "./arrow.png";
-import search from "./search.png";
-import bigmac from "./bigmac.jpg";
-import pancakes from "./pancakes.jpg";
-import shawarma from "./shawarma.jpg";
 
 import { useRef } from "react";
 
@@ -40,9 +23,7 @@ function FetchOnClick() {
   const [shouldFetch, setShouldFetch] = useState(true);
 
   const { data } = useSWR(
-    shouldFetch
-      ? null
-      : `https:www.themealdb.com/api/json/v1/1/search.php?s=${inputValue}`,
+    shouldFetch ? null : `${process.env.KEY}=${inputValue}`,
     fetcher
   );
 
@@ -58,11 +39,13 @@ function FetchOnClick() {
   }
   return (
     <div className="page">
-      <Navbar />
+      <video autoPlay loop muted className="videoBg">
+        <source src="./fufu3.mp4" type="video/mp4" />
+      </video>
 
       <div className="coverImg">
-        <h1>Are you looking for a recipe?</h1>
-        <h2>We are here to help!</h2>
+        <h1 className="h11">Are you looking for a recipe?</h1>
+        <h2 className="h22">We are here to help!</h2>
 
         <Button
           onClick={() => {
@@ -71,15 +54,16 @@ function FetchOnClick() {
           className="arrow"
         >
           <Image
-            className="arrow1"
-            src={arrow.src}
+            className="arrow.png"
+            src="/arrow.png"
             alt="food"
             width={50}
             height={50}
           />
         </Button>
       </div>
-      <div id="okok" ref={heroRef} className="hero">
+
+      <div ref={heroRef} className="hero">
         <div className="search">
           <input
             autocomplete="off"
@@ -93,8 +77,8 @@ function FetchOnClick() {
             <Image
               key="searchh"
               priority
-              className="productImg"
-              src={search}
+              className="productImg12"
+              src="/search.png"
               width={30}
               height={30}
               alt="search"
@@ -105,7 +89,7 @@ function FetchOnClick() {
         {data ? (
           <div className="productContainer">
             {data.meals.map((meal) => (
-              <div>
+              <div className="mapped_div">
                 {" "}
                 <Link
                   className="linkk"
@@ -122,8 +106,8 @@ function FetchOnClick() {
                       priority
                       className="productImg"
                       src={meal.strMealThumb}
-                      width={450}
-                      height={450}
+                      width={400}
+                      height={400}
                       alt="meal"
                     />
                     <div className="leftOfImg">
@@ -137,15 +121,15 @@ function FetchOnClick() {
                       </div>
                     </div>
                   </div>
-                  <div className="mealName">{meal.strMeal}</div>
                 </Link>
+                <div className="mealName">{meal.strMeal}</div>
               </div>
             ))}
           </div>
         ) : null}
       </div>
       <div className="finalSection">
-        <p>Recommended recipes</p>
+        <p className="recommended_recipes">Recommended recipes</p>
 
         <div className="recommandations">
           <div className="rec">
@@ -161,9 +145,9 @@ function FetchOnClick() {
                   key="53013"
                   priority
                   className="productImg"
-                  src={bigmac.src}
-                  width={450}
-                  height={450}
+                  src="/bigmac.jpg"
+                  width={400}
+                  height={400}
                   alt="meal"
                 />
                 <div className="leftOfImg">
@@ -194,9 +178,9 @@ function FetchOnClick() {
                   key="52854"
                   priority
                   className="productImg"
-                  src={pancakes.src}
-                  width={450}
-                  height={450}
+                  src="/pancakes.jpg"
+                  width={400}
+                  height={400}
                   alt="meal"
                 />
                 <div className="leftOfImg">
@@ -227,9 +211,9 @@ function FetchOnClick() {
                   key="53028"
                   priority
                   className="productImg"
-                  src={shawarma.src}
-                  width={450}
-                  height={450}
+                  src="/shawarma.jpg"
+                  width={400}
+                  height={400}
                   alt="meal"
                 />
                 <div className="leftOfImg">

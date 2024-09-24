@@ -1,0 +1,30 @@
+div {
+  position: relative;
+  border: solid 1.5em rgba(0, 0, 0, 0.03);
+  height: 100vmin;
+  max-width: 30em;
+  max-height: 20em;
+  background: url(https://images.unsplash.com/photo-1544070078-a212eda27b49?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ)
+    50% / cover border-box padding-box;
+  /* background-origin */
+  /* background-clip */
+  font-size: 2em;
+}
+div:before {
+  position: absolute;
+  z-index: -1;
+  /* put it *behind* parent */
+  /* go outside padding-box by * a border-width ($b) in every direction */
+  top: -1.5em;
+  right: -1.5em;
+  bottom: -1.5em;
+  left: -1.5em;
+  border: inherit;
+  border-color: transparent;
+  background: inherit;
+  background-clip: border-box;
+  /* -webkit-prefixed version * still needed for * some mobile browsers 💔😭 */
+  -webkit-filter: blur(9px);
+  filter: blur(9px);
+  content: "";
+}
