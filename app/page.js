@@ -89,7 +89,7 @@ function FetchOnClick() {
         {data ? (
           <div className="productContainer">
             {data.meals.map((meal) => (
-              <div className="mapped_div">
+              <div key={meal.strMealThumb} className="mapped_div">
                 {" "}
                 <Link
                   className="linkk"

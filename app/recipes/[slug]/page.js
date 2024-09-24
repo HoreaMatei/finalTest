@@ -10,7 +10,7 @@ import Navbar from "@/app/components/Navbar";
 import { Button } from "@nextui-org/react";
 import { useRef } from "react";
 
-function page({ params }) {
+function Page({ params }) {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
@@ -183,4 +183,4 @@ function page({ params }) {
   );
 }
 
-export default page;
+export default Page;
