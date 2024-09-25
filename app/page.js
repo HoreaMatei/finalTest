@@ -23,7 +23,7 @@ function FetchOnClick() {
   const [shouldFetch, setShouldFetch] = useState(true);
 
   const { data } = useSWR(
-    shouldFetch ? null : `${process.env.API.KEY}=${inputValue}`,
+    shouldFetch ? null : `${process.env.API_KEY}=${inputValue}`,
     fetcher
   );
 
