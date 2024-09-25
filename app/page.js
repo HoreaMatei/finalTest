@@ -25,7 +25,7 @@ function FetchOnClick() {
   const { data } = useSWR(
     shouldFetch
       ? null
-      : `https:www.themealdb.com/api/json/v1/1/search.php?s=${inputValue}`,
+      : `https://www.themealdb.com/api/json/v1/1/search.php?s=${inputValue}`,
     fetcher
   );
 

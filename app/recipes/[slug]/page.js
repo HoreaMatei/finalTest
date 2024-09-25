@@ -24,7 +24,7 @@ function Page({ params }) {
 
   const name1 = params.slug;
   const { data, error, isLoading } = useSWR(
-    `https:www.themealdb.com/api/json/v1/1/search.php?s=${name1}`,
+    `https://www.themealdb.com/api/json/v1/1/search.php?s=${name1}`,
     fetcher
   );
   if (error) return <div>failed to load</div>;
