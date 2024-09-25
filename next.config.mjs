@@ -5,7 +5,7 @@ const nextConfig = {
     domains: ["www.themealdb.com"],
   },
   env: {
-    KEY: process.env.KEY,
+    STORYBLOK_API_KEY: process.env.STORYBLOK_API_KEY,
   },
 };
 
