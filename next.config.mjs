@@ -4,6 +4,9 @@ const nextConfig = {
   images: {
     domains: ["www.themealdb.com"],
   },
+  env: {
+    KEY: process.env.KEY,
+  },
 };
 
 export default withNextVideo(nextConfig);
