@@ -22,7 +22,10 @@ function FetchOnClick() {
   const [inputValue, setInputValue] = useState("");
   const [shouldFetch, setShouldFetch] = useState(true);
 
-  const { data } = useSWR(shouldFetch ? null : `${KEY}=${inputValue}`, fetcher);
+  const { data } = useSWR(
+    shouldFetch ? null : `${process.env.KEY}=${inputValue}`,
+    fetcher
+  );
 
   function handleClick() {
     setShouldFetch(false);
