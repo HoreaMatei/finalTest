@@ -24,7 +24,7 @@ function Page({ params }) {
 
   const name1 = params.slug;
   const { data, error, isLoading } = useSWR(
-    `${process.env.KEY}=${name1}`,
+    `${process.env.API.KEY}=${name1}`,
     fetcher
   );
   if (error) return <div>failed to load</div>;
