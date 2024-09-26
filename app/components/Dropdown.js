@@ -16,7 +16,7 @@ export default function Dropdown() {
 
   console.log(rand1);
   const [shouldFetch, setShouldFetch] = useState(false);
-  const { data } = useSWR(shouldFetch ? null : KEY, fetcher);
+  const { data } = useSWR(shouldFetch ? null : process.env.KEY, fetcher);
 
   function handleClick() {
     setShouldFetch((prev) => !prev);
