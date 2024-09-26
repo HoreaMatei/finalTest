@@ -16,10 +16,7 @@ export default function Dropdown() {
 
   console.log(rand1);
   const [shouldFetch, setShouldFetch] = useState(false);
-  const { data } = useSWR(
-    shouldFetch ? null : `https:www.themealdb.com/api/json/v1/1/search.php?s=`,
-    fetcher
-  );
+  const { data } = useSWR(shouldFetch ? null : KEY, fetcher);
 
   function handleClick() {
     setShouldFetch((prev) => !prev);
