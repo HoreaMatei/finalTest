@@ -232,7 +232,7 @@ span {
 .intructionsText {
   margin-top: 10px;
   font-size: 20px;
-  font-size: clamp(1rem, 18px, 3rem);
+  font-size: clamp(0.8rem, 13px, 2.8rem);
   word-spacing: 1px;
   line-height: 1.6;
   padding: 40px;
@@ -522,8 +522,19 @@ span {
 }
 
 @media (max-width: 450px) {
+  .card {
+    opacity: 100;
+    z-index: 1000;
+  }
+  .front {
+    height: fit-content;
+  }
   .recipeSection1 {
     height: fit-content;
+  }
+
+  .intructionsText {
+    font-size: 10px;
   }
 
   .ingg {
