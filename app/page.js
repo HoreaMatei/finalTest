@@ -39,14 +39,7 @@ function FetchOnClick() {
   }
   return (
     <div className="page">
-      <video
-        playsinline
-        style={{"user-select: none;"}}
-        autoPlay
-        loop
-        muted
-        className="videoBg"
-      >
+      <video playsinline autoPlay loop muted className="videoBg">
         <source src="./fufu3.mp4" type="video/mp4" />
       </video>
 
