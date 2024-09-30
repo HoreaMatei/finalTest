@@ -41,7 +41,7 @@ function FetchOnClick() {
     <div className="page">
       <video
         playsinline
-        style="user-select: none;"
+        style={{"user-select: none;"}}
         autoPlay
         loop
         muted
