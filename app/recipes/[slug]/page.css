@@ -510,6 +510,9 @@ span {
   .imgInHere {
     background-position: center;
   }
+  .loo {
+    height: 60lvh;
+  }
   .dotted,
   .intructionsText {
     background-image: none;
